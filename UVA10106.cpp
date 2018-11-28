@@ -24,7 +24,7 @@ int main(void){
 			continue;
 		}
 
-		int ans[300];
+		int ans[500];
 		memset(ans, 0, sizeof(ans));
 		int idx = 0;
 		int idxtmp = 0;
@@ -36,10 +36,7 @@ int main(void){
 			for(int j = b.size()-1 ; j >= 0 ; j--){
 
 				tmp = (a[i] - '0')*(b[j] - '0');
-				//cout << tmp << endl;
 				ans[idx] += tmp % 10 + carry;
-				//cout << ans[idx] << endl;
-				//cout << "carry: " << carry << endl;
 				carry = 0;
 
 				if(ans[idx] >= 10){
@@ -47,7 +44,6 @@ int main(void){
 					carry += ans[idx] / 10;
 					ans[idx] = ans[idx] % 10;
 				}
-				//cout << "carry: " << carry << endl;
 				carry += tmp/10;
 				idx++; 
 			}
@@ -55,12 +51,8 @@ int main(void){
 			idxtmp++;
 			if(i != 0)
 				idx = idxtmp;
-			//cout << idx << endl;
 			carry = 0;
 		}
-
-		//cout << ans[idx-1] << endl;
-
 		if(ans[idx] != 0)
 			printf("%d", ans[idx]);
 		for(int i = idx-1 ; i >= 0 ; i--){
