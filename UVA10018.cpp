@@ -86,7 +86,6 @@ int main(void){
 
 				input[i] = tmp[i];
 			}
-
 		}while(!isPalindromes(input, lenght));
 
 		printf("%d ", count);

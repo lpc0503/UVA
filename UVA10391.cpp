@@ -66,7 +66,7 @@ int main(void){
 
 	while(cin >> str[str_index]){
 
-		unsigned int head_index = BKDRHash(str[str_index	].c_str());
+		unsigned int head_index = BKDRHash(str[str_index].c_str());
 		add(head_index, str_index);
 		str_index++;
 	}
