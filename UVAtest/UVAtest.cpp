@@ -2,7 +2,7 @@
 
 using namespace std;
 
-#define PROBLEM ""
+#define PROBLEM "test"
 
 int main(){
 	
