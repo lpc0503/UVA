@@ -11,5 +11,6 @@ int main(){
 	freopen("UVA" PROBLEM ".out", "w", stdout);
 	#endif
 
+	printf("hello\n");
 	return 0;
 }
