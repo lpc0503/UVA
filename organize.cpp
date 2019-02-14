@@ -35,7 +35,7 @@ int main(){
 
 	#ifdef DBG
 	// freopen("1.in", "r", stdin);
-	freopen("2.out", "w", stdout);
+	//freopen("2.out", "w", stdout);
 	#endif
 
 	FILE *fp;
