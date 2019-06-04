@@ -1,0 +1,6 @@
+5
+Each line of output contains a single uppercase letter, followed by a single space, then followed by a positive decimal integer.
+The integer indicates how many times the corresponding letter appears in the input text.
+Upper and lower case letters in the input are to be considered the same.
+The output must be sorted in descending count order;
+that is, the most frequent letter is on the first output line, and the last line of output indicates the least frequent letter.
